@@ -10,7 +10,7 @@ function encrypt() {
         // Encrypt uppercase letters
         if (charCode >= 65 && charCode <= 90) { 
             charCode = ((charCode - 65 + key) % 26) + 65;
-            //98 - 65 + 3 ) % 26 ) + 65
+            //98 - 65 + 3 ) % 26 ) + 65 cons
         }
         // Encrypt lowercase letters
         else if (charCode >= 97 && charCode <= 122) {
