@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CryptoCoder</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="whole">
+            <div class="title">
+                <h1>CryptoCoder</h1>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <h2>Encryption</h2>
+                    <textarea id="plainText" rows="5" cols="50" placeholder="Enter text to encrypt" 
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-right: 8px;"></textarea>
+                    <br>
+                    <textarea id="encryptedText" rows="5" cols="50" placeholder="Encrypted text" readonly
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-right: 8px;"></textarea>
+                    <br>
+                    <button onclick="encrypt()">Encrypt</button>
+                </div>
+                
+                <div class="box">
+                    <h2>Decryption</h2>
+                    <textarea id="encryptedText2" rows="5" cols="50" placeholder="Enter text to decrypt"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-right: 8px;"></textarea>
+                    <br>
+                    <textarea id="decryptedText" rows="5" cols="50" placeholder="Decrypted text" readonly
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-right: 8px;"></textarea>
+                    <br>
+                    <button onclick="decrypt()">Decrypt</button>
+                </div>
+            </div>
+            <div class="keyVal">
+                <h5>Encryption Key</h5>
+                <input type="number" id="keys" placeholder="Key Value" style="font-size: 11px;" min="0" max="100">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
